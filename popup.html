@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="popup.css">
+  <title>Hack Cookie Converter</title>
+</head>
+<body>
+  <header class="head">
+    <h1>Hack Cookie Converter</h1>
+    <p class="sub">Netscape ⇄ JSON · convierte cookies</p>
+  </header>
+
+  <nav class="tabs" role="tablist">
+    <button id="to-json" class="tab" aria-pressed="true" role="tab">→ JSON</button>
+    <button id="to-netscape" class="tab" aria-pressed="false" role="tab">→ Netscape</button>
+  </nav>
+
+  <main class="panes">
+    <section id="in-pane" class="pane">
+      <div class="pane-head">
+        <span id="in-label">Netscape</span>
+        <div class="pane-actions">
+          <button id="open" class="mini" type="button" title="Abrir archivo">Archivo</button>
+          <input id="file" type="file" accept=".txt,.json,text/plain,application/json" hidden>
+          <button id="clear" class="mini" type="button" disabled>Limpiar</button>
+        </div>
+      </div>
+      <textarea id="cookie" spellcheck="false" placeholder="Pega tus cookies en formato Netscape"></textarea>
+    </section>
+
+    <section id="out-pane" class="pane">
+      <div class="pane-head">
+        <span id="out-label">JSON</span>
+        <div class="pane-actions">
+          <button id="copy" class="mini" type="button" disabled>Copiar</button>
+          <button id="download" class="mini" type="button" disabled>Descargar</button>
+        </div>
+      </div>
+      <textarea id="result" readonly spellcheck="false"></textarea>
+      <div class="foot">
+        <span id="stat" class="stat"></span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="opts">
+    <label id="simple-option" class="chk">
+      <input id="simple" type="checkbox"> Json simple
+    </label>
+	<p class="credit">By @hacker056</p>
+  </footer>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

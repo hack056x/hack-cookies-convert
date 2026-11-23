@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Hack Cookie Converter",
+  "version": "2.0",
+  "description": "Convierte cookies entre Netscape y JSON solo pegando o cargando. By @hacker056",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Hack Cookie Converter",
+    "default_icon": {
+      "16": "icon.png",
+      "32": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "permissions": [],
+  "host_permissions": []
+}
